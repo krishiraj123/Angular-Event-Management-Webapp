@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-cover {
+  background-size: cover;
+  height: 100vh;
+}
+
+.btn-login {
+  background-color: #44b6ae;
+  color: white;
+}
+
+.btn-login-forget-pass {
+  background-color: #e12330;
+  color: white;
+}

@@ -1,0 +1,35 @@
+.text-hero-h1 {
+  color: #46819e;
+  font-size: 4rem;
+}
+
+.text-hero-p {
+  color: #114661;
+  font-size: 4rem;
+}
+
+.bg-hero-custom {
+  background-color: #f7f7f7;
+}
+
+/* Add this CSS to your existing stylesheet */
+.timer-box {
+  /* background-color: #3498db; */
+  color: #222;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timer-box:hover {
+  transform: scale(1.05);
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .col-lg-6 {
+    order: -1; /* Move the image above the text on smaller screens */
+  }
+}

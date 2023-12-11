@@ -1,0 +1,30 @@
+/* Add this CSS to your existing stylesheet */
+.fun-fact-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fun-fact-box:hover {
+  transform: scale(1.05);
+}
+
+.fact-number {
+  font-size: 30px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.text-hero-h1 {
+  font-size: 2.5rem;
+}
+
+.text-hero-p {
+  font-size: 1.5rem;
+}
+
+.fs-5 {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,76 @@
+\
+<div class="container">
+  <div class="d-flex">
+    <div class="form-control">
+      <div class="row">
+        <div class="col text-center">Admin Panel</div>
+      </div>
+
+      <div class="row m-3 px-5">
+        <label for="eid">Event Id</label>
+        <input type="number" name="eid" [(ngModel)]="tempEve.eid" />
+      </div>
+
+      <div class="row m-3 px-5">
+        <label for="ename">Event Name</label>
+        <input type="text" name="ename" [(ngModel)]="tempEve.ename" />
+      </div>
+
+      <div class="row m-3 px-5">
+        <label for="enop">Number of Maximum Participents</label>
+        <input type="number" name="enop" [(ngModel)]="tempEve.mp" />
+      </div>
+
+      <div class="row m-3 px-5">
+        <label for="disc">Discreption</label>
+        <input type="text" name="disc" [(ngModel)]="tempEve.disc" />
+      </div>
+
+      <div class="row m-3 px-5">
+        <label for="img">Image</label>
+        <input type="image" name="img" [(ngModel)]="tempEve.img" />
+      </div>
+
+      <div class="row m-3 px-5">
+        <div class="col">
+          <button
+            class="btn-primary"
+            *ngIf="idToUpdate == -1"
+            (click)="addEvent()"
+          >
+            Add
+          </button>
+        </div>
+        <div class="col">
+          <button
+            class="btn-warning"
+            *ngIf="idToUpdate > -1"
+            (click)="editEvent()"
+          >
+            Edit
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <table border="1" class="table">
+          <tr *ngFor="let e of events">
+            <td>{{ e.eid }}</td>
+            <td><img src="e.img" /></td>
+            <td>{{ e.ename }}</td>
+            <td>{{ e.disc }}</td>
+            <td>{{ e.mp }}</td>
+            <td>
+              <button class="btn-warning" (click)="setForEdit(e)">Edit</button>
+            </td>
+            <td>
+              <button class="btn-danger" (click)="deleteEvent(e.eid)">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
